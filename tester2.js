@@ -87,23 +87,25 @@ function deaths() {
   text('2', 970 + podieX, 250 + podieY)
   text('3', 1310 + podieX, 300 + podieY)
 
-  //Landenavne//
-  max = 0;
-  max2 = 0;
-  land = '';
-  land2 = '';
+    //Landenavne//
+//  max = 0;
+//max2 = 0;
+//land = '';
+//land2 = '';
 
   maksimum = [0, 0, 0];
   lande = ['', '', ''];
-
+console.log(table2.getColumnCount());
+console.log(table2.getRowCount());
   for (let j = 0; j < 3; j++) {
 
-    for (let i = 0; i < table2.getColumnCount(); i++) {
-      if (parseInt(table2.getColumn(count)[i]) >= maksimum[0]) {
-        maksimum[0] = parseInt(table2.getColumn(count)[i]);
-        lande[0] = table2.getColumn(1)[i];
-        console.log(table2.getColumn(count)[i]);
-      }
+    for (let i = 0; i < table2.getRowCount(); i++) {
+      console.log(table2.getColumn(count).length)
+//      if (parseInt(table2.getColumn(count)[i]) >= maksimum[0]) {
+//        maksimum[0] = parseInt(table2.getColumn(count)[i]);
+//        lande[0] = table2.getColumn(1)[i];
+//      }
+      // console.log(parseInt(table2.getColumn(count)[i]) < maksimum[j - 1])
       if (parseInt(table2.getColumn(count)[i]) > maksimum[j] && parseInt(table2.getColumn(count)[i]) < maksimum[j - 1]) {
         maksimum[j] = parseInt(table2.getColumn(count)[i]);
         lande[j] = table2.getColumn(1)[i];
@@ -203,23 +205,25 @@ function cases() {
   text('2', 970 + podieX, 250 + podieY)
   text('3', 1310 + podieX, 300 + podieY)
 
-  //Landenavne//
-  max = 0;
-  max2 = 0;
-  land = '';
-  land2 = '';
+    //Landenavne//
+//  max = 0;
+//max2 = 0;
+//land = '';
+//land2 = '';
 
   maksimum = [0, 0, 0];
   lande = ['', '', ''];
-
+console.log(table.getColumnCount());
+console.log(table.getRowCount());
   for (let j = 0; j < 3; j++) {
 
-    for (let i = 0; i < table.getColumnCount(); i++) {
-      if (parseInt(table.getColumn(count)[i]) >= maksimum[0]) {
-        maksimum[0] = parseInt(table.getColumn(count)[i]);
-        lande[0] = table.getColumn(1)[i];
-        console.log(table.getColumn(count)[i]);
-      }
+    for (let i = 0; i < table.getRowCount(); i++) {
+      console.log(table.getColumn(count).length)
+//      if (parseInt(table2.getColumn(count)[i]) >= maksimum[0]) {
+//        maksimum[0] = parseInt(table2.getColumn(count)[i]);
+//        lande[0] = table2.getColumn(1)[i];
+//      }
+      // console.log(parseInt(table2.getColumn(count)[i]) < maksimum[j - 1])
       if (parseInt(table.getColumn(count)[i]) > maksimum[j] && parseInt(table.getColumn(count)[i]) < maksimum[j - 1]) {
         maksimum[j] = parseInt(table.getColumn(count)[i]);
         lande[j] = table.getColumn(1)[i];
