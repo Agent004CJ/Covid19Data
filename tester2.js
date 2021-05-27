@@ -101,10 +101,10 @@ console.log(table2.getRowCount());
 
     for (let i = 0; i < table2.getRowCount(); i++) {
       console.log(table2.getColumn(count).length)
-//      if (parseInt(table2.getColumn(count)[i]) >= maksimum[0]) {
-//        maksimum[0] = parseInt(table2.getColumn(count)[i]);
-//        lande[0] = table2.getColumn(1)[i];
-//      }
+      if (parseInt(table2.getColumn(count)[i]) >= maksimum[0]) {
+        maksimum[0] = parseInt(table2.getColumn(count)[i]);
+        lande[0] = table2.getColumn(1)[i];
+      }
       // console.log(parseInt(table2.getColumn(count)[i]) < maksimum[j - 1])
       if (parseInt(table2.getColumn(count)[i]) > maksimum[j] && parseInt(table2.getColumn(count)[i]) < maksimum[j - 1]) {
         maksimum[j] = parseInt(table2.getColumn(count)[i]);
@@ -219,10 +219,10 @@ console.log(table.getRowCount());
 
     for (let i = 0; i < table.getRowCount(); i++) {
       console.log(table.getColumn(count).length)
-//      if (parseInt(table2.getColumn(count)[i]) >= maksimum[0]) {
-//        maksimum[0] = parseInt(table2.getColumn(count)[i]);
-//        lande[0] = table2.getColumn(1)[i];
-//      }
+      if (parseInt(table2.getColumn(count)[i]) >= maksimum[0]) {
+        maksimum[0] = parseInt(table2.getColumn(count)[i]);
+        lande[0] = table2.getColumn(1)[i];
+      }
       // console.log(parseInt(table2.getColumn(count)[i]) < maksimum[j - 1])
       if (parseInt(table.getColumn(count)[i]) > maksimum[j] && parseInt(table.getColumn(count)[i]) < maksimum[j - 1]) {
         maksimum[j] = parseInt(table.getColumn(count)[i]);
