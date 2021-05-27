@@ -88,10 +88,10 @@ function deaths() {
   text('3', 1310 + podieX, 300 + podieY)
 
     //Landenavne//
-//  max = 0;
-//max2 = 0;
-//land = '';
-//land2 = '';
+ max = 0;
+ max2 = 0;
+ land = '';
+ land2 = '';
 
   maksimum = [0, 0, 0];
   lande = ['', '', ''];
@@ -206,10 +206,10 @@ function cases() {
   text('3', 1310 + podieX, 300 + podieY)
 
     //Landenavne//
-//  max = 0;
-//max2 = 0;
-//land = '';
-//land2 = '';
+ max = 0;
+ max2 = 0;
+ land = '';
+ land2 = '';
 
   maksimum = [0, 0, 0];
   lande = ['', '', ''];
